@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>REC to SQM Converter | SimpleQuest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>REC <span>&rarr;</span> SQM</h1>
+    <p class="sub">Convert TinyTask <code>.rec</code> recordings into SimpleQuest <code>.sqm</code> macros. Everything runs in your browser. Files are never uploaded.</p>
+
+    <label id="drop" class="drop" tabindex="0">
+      <input id="file" type="file" accept=".rec" multiple hidden>
+      <strong>Drop .rec files here</strong>
+      <span>or click to browse (multiple files allowed)</span>
+    </label>
+
+    <ul id="results" class="results"></ul>
+    <p id="error" class="error" role="alert" hidden></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

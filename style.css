@@ -1,0 +1,21 @@
+:root { --bg1:#060918; --bg2:#180534; --card:#0e1530; --btn:#1c2850; --acc:#46bef5; --title:#78e1ff; --text:#d2dcf5; --muted:#7887af; --bad:#ff6478; --ok:#5aeb96; }
+* { box-sizing: border-box; }
+body { margin:0; min-height:100vh; display:grid; place-items:center; padding:24px; font-family:"Segoe UI",system-ui,sans-serif; color:var(--text); background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed; }
+.card { width:min(560px,100%); background:var(--card); border:1px solid #243055; border-radius:18px; padding:28px; box-shadow:0 20px 60px #0008; }
+h1 { margin:0 0 6px; font-size:2rem; color:var(--title); letter-spacing:.5px; }
+h1 span { color:var(--acc); }
+.sub { margin:0 0 20px; color:var(--muted); line-height:1.5; font-size:.95rem; }
+code { background:#1a2448; padding:1px 6px; border-radius:5px; color:var(--title); }
+.drop { display:flex; flex-direction:column; gap:4px; align-items:center; justify-content:center; text-align:center; padding:34px 16px; border:2px dashed var(--acc); border-radius:14px; background:#0a1028; cursor:pointer; transition:.15s; }
+.drop span { color:var(--muted); font-size:.9rem; }
+.drop:hover, .drop:focus-visible, .drop.over { background:#121c42; border-style:solid; outline:none; }
+.results { list-style:none; margin:18px 0 0; padding:0; display:grid; gap:10px; }
+.item { display:flex; gap:12px; align-items:center; justify-content:space-between; background:#0a1028; border:1px solid #243055; border-radius:12px; padding:12px 14px; }
+.item.fail { border-color:var(--bad); }
+.info { min-width:0; }
+.name { font-weight:600; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.meta { color:var(--muted); font-size:.85rem; margin-top:2px; }
+.item.fail .meta { color:var(--bad); }
+.dl { flex:none; border:2px solid var(--acc); background:var(--btn); color:#ebf5ff; font:inherit; font-weight:600; padding:8px 14px; border-radius:10px; cursor:pointer; }
+.dl:hover { background:#2a3a74; }
+.error { color:var(--bad); margin:14px 0 0; }
